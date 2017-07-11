@@ -5,6 +5,10 @@ var app = angular.module('Todo', []);
 //     in Dependancy Injection in Angular)
 
 app.controller('TodoCtrl', function($scope) {
-    $scope.message = "Hmmmmm...let us see this scocery "
+    $scope.todos = [
+    'Learn Sketch',
+    'Look at Dribbble and feel inferior',
+    'Actually learn how to use the Pen tool'
+  ];
 });
 // Controller is set to define state and behaviour of the view
