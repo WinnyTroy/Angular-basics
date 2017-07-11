@@ -10,17 +10,9 @@
     <div class="page-container" ng-controller="TodoCtrl">
 
       <h2>Todo</h2>
-      <ul class="todo-list">
+      <ul class="todo-list" ng-repeat="todo in todos track by $index">
         <li>
-          Learn Sketch
-          <button class="bt bt-achieve">Done</button>
-        </li>
-        <li>
-          Look at Dribbble and feel inferior
-          <button class="bt bt-achieve">Done</button>
-        </li>
-        <li>
-          Actually learn how to use the Pen tool
+          <span>{{ todo }}</span>
           <button class="bt bt-achieve">Done</button>
         </li>
       </ul>
